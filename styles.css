@@ -1,0 +1,190 @@
+/* Global View (Desktop) */
+body {
+    font-family: 'Asap', sans-serif;
+    background-color: #ebebeb;
+}
+
+.header-container {
+    background-color: rgb(18, 75, 75);
+    min-height: 100px;
+    position: fixed;
+    width: 100%;
+}
+
+header {
+    background-color: rgb(18, 75, 75);
+    max-width: 1024px;
+    min-height: 100px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+.logo {
+    text-align: left;
+    color: white;
+}
+
+nav {
+    text-align: right;
+}
+
+.bold {
+    font-weight: 700;
+    font-size: 17px;
+}
+
+.navbutton {
+    padding: 10px 40px;
+    border-style: solid;
+    border-width: 2px;
+    margin-left: 15px;
+}
+
+.navbutton:hover {
+    color: teal;
+}
+
+.container {
+    min-height: 500px;
+    max-width: 1024px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 150px;
+}
+
+.col {
+    background-color: teal;
+    width: 30%;
+    margin-bottom: 40px;
+}
+
+.col p {
+    color: white;
+    font-size: 0.875rem;
+    padding: 20px 25px;
+    line-height: 1.25rem;
+}
+
+.hide-desktop-only {
+    display: none;
+}
+
+.col img {
+    width: 100%;
+    height: auto;
+}
+
+.col p::first-line {
+    font-weight: 700;
+}
+
+.mob-wrapper {
+    display: none;
+    text-align: right;
+    margin-right: 10px;
+}
+
+
+
+/* Tablet View */
+@media (max-width: 760px){
+    
+.col {
+    width: 45%;
+}
+
+.hide-desktop-only {
+    display: block;
+
+    
+}
+
+.header-container {
+    padding-bottom: 40px;
+}
+
+header {
+    display: block;
+}
+
+.logo {
+    text-align: center;
+    padding: 40px 0;
+}
+
+nav a {
+    text-align: center;
+}
+
+.container {
+    padding-top: 200px;
+}
+
+nav {
+    text-align: center;
+}
+
+}
+
+/* Mobile View */
+@media (max-width: 600px){
+    nav {
+        display: none;
+    }
+    
+    .col {
+        width: 100%;
+    }
+
+    .hide-mobile-only {
+        display: none;
+    }
+
+    .logo {
+        text-align: center;
+        padding: 20px 0;
+    }
+
+    .navbutton {
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .container {
+        padding-top: 180px;
+    }
+
+    .mob-wrapper {
+        display: block;
+        padding-right: 20px;
+    }
+
+    .mob-nav {
+        display: none;
+        text-align: center;
+        width: 30%;
+        padding-left: 380px;
+    }
+
+    .mobnavbutton {
+        display: block;
+        padding: 10px 10px;
+        margin-bottom: 5px;
+        border-style: solid;
+        border-width: 1px;
+    }
+
+    .mobnavbutton:hover {
+        color: teal;
+    }
+
+    }
