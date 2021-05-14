@@ -224,7 +224,7 @@ nav {
 }
 
 /* Mobile View */
-@media (max-width: 40rem){
+@media (max-width: 50rem){
     nav {
         display: none;
     }
@@ -257,7 +257,7 @@ nav {
         display: none;
         text-align: center;
         width: 30%;
-        padding-left: 38rem;
+        padding-left: 28rem;
     }
 
     .mobnavbutton {
@@ -269,7 +269,8 @@ nav {
     }
 
     .mobnavbutton:hover {
-        color: teal;
+        color: rgb(210, 210, 210);
+        box-shadow: 0 1rem 2rem rgba(0,0,0,.2);
     }
 
     }
