@@ -179,7 +179,7 @@ footer {
 
 
 /* Tablet View */
-@media (max-width: 68rem){
+@media (max-width: 65rem){
     
 .col {
     width: 45%;
@@ -224,7 +224,7 @@ nav {
 }
 
 /* Mobile View */
-@media (max-width: 50rem){
+@media (max-width: 40rem){
     nav {
         display: none;
     }
