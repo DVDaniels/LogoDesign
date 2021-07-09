@@ -87,8 +87,7 @@ nav {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding-top: 15rem;
-    padding-bottom: 3rem;
+    padding: 15rem 3rem;
     grid-row: 2 / 3;
 }
 
@@ -142,10 +141,9 @@ nav {
 
 .about-container {
     max-width: 102.5rem;
-    height: 80vh;
+    height: 100vh;
     margin: 0 auto auto;
-    padding-top: 15rem;
-    padding-bottom: 3rem;
+    padding: 15rem;
     font-size: 2rem;
 }
 
@@ -198,15 +196,6 @@ nav {
     margin-left: 1.5rem;
 }
 
-footer {
-    padding-top: 10rem;
-    position: absolute;
-    left: 0px;
-    bottom: 0px;
-    width: 100%;
-    margin-bottom: 0px;
-}
-
 
 /* Tablet View */
 @media (max-width: 65rem){
@@ -241,10 +230,9 @@ nav a {
     min-height: 40rem;
     max-width: 102.5rem;
     margin: 0 auto;
-    padding-left: 2rem;
-    padding-top: 20rem;
-    padding-bottom: 3rem;
+    padding: 20rem 30rem;
     font-size: 2rem;
+   
 }
 
 nav {
@@ -254,7 +242,7 @@ nav {
 }
 
 /* Mobile View */
-@media (max-width: 40rem){
+@media (max-width: 50rem){
     nav {
         display: none;
     }
@@ -274,8 +262,13 @@ nav {
     }
 
     .container {
-        padding-top: 18rem;
+        padding-top: 20rem;
         margin: 0rem 2rem;
+    }
+
+    .about-container {
+        padding: 20rem 2rem;
+        height: 150vh;
     }
 
     .mob-wrapper {
@@ -301,6 +294,15 @@ nav {
     .mobnavbutton:hover {
         color: rgb(210, 210, 210);
         box-shadow: 0 1rem 2rem rgba(0,0,0,.2);
+    }
+
+    #footer {
+        position: absolute;
+        left: 0px;
+        bottom: 0px;
+        width: 100%;
+        margin-bottom: 0px;
+        
     }
 
     }
