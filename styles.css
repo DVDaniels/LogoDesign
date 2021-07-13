@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
 /* Index style sheet */
 
 
@@ -7,10 +14,17 @@
     min-height: 50rem;
     max-width: 102.5rem;
     margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     padding: 5rem 3rem 3rem 3rem;
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
     grid-row: 2 / 3;
 }
 
@@ -22,8 +36,11 @@
 }
 
 .col:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 1rem 2rem rgba(0,0,0,.2);
+    -webkit-transform: translateY(-3px);
+        -ms-transform: translateY(-3px);
+            transform: translateY(-3px);
+    -webkit-box-shadow: 0 1rem 2rem rgba(0,0,0,.2);
+            box-shadow: 0 1rem 2rem rgba(0,0,0,.2);
 }
 
 .col p {
@@ -45,12 +62,10 @@
 
 .mob-wrapper {
     display: none;
-    text-align: right;
-    margin-right: 1rem;
 }
 
 /* Tablet View */
-@media (max-width: 65rem){
+@media (max-width: 80rem){
     
 .col {
     width: 45%;
@@ -61,16 +76,21 @@
 }
 
 .header-container {
-    padding-bottom: 4rem;
+    padding: 2rem 0;
 }
 
 header {
     display: block;
+    padding-top: 2rem;
 }
 
 .logo {
     text-align: center;
-    padding: 4rem 0;
+}
+
+nav {
+    padding-top: 2rem;
+    text-align: center;
 }
 
 nav a {
@@ -83,22 +103,16 @@ nav a {
 }
 
 .about-container {
-    min-height: 40rem;
     max-width: 102.5rem;
     margin: 0 auto;
     padding: 10rem 10rem;
     font-size: 2rem;
-   
-}
-
-nav {
-    text-align: center;
 }
 
 }
 
 /* Mobile View */
-@media (max-width: 50rem){
+@media (max-width: 45rem){
     nav {
         display: none;
     }
@@ -109,7 +123,6 @@ nav {
 
     .logo {
         text-align: center;
-        padding: 2rem 0;
     }
 
     .navbutton {
@@ -127,28 +140,36 @@ nav {
     }
 
     .mob-wrapper {
-        display: block;
-        padding-right: 2rem;
+        position: absolute;
+        width: 100vw;
+        top: 3.5rem;
+        margin-left: 1.5rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
     }
 
     .mob-nav {
-        display: none;
+        position: relative;
+        top: 2rem;
+        align-content: center;
         text-align: center;
-        width: 30%;
-        padding-left: 28rem;
+        margin-top: 1.5rem;
+        margin-right: 1.5rem;
     }
 
     .mobnavbutton {
-        display: block;
         padding: 1rem 1rem;
-        margin-bottom: 5px;
         border-style: solid;
-        border-width: .1rem;
+        border-width: .3rem;
+        align-self: flex-end;
+        margin: 0 2rem;
     }
 
     .mobnavbutton:hover {
         color: rgb(210, 210, 210);
-        box-shadow: 0 1rem 2rem rgba(0,0,0,.2);
+        -webkit-box-shadow: 0 1rem 2rem rgba(0,0,0,.2);
+                box-shadow: 0 1rem 2rem rgba(0,0,0,.2);
     }
 
     #footer {
