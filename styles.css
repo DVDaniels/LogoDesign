@@ -113,6 +113,10 @@ nav a {
 
 /* Mobile View */
 @media (max-width: 45rem){
+    .header-container {
+        position: static;
+    }
+
     nav {
         display: none;
     }
@@ -122,7 +126,8 @@ nav a {
     }
 
     .logo {
-        text-align: center;
+        text-align: right;
+        margin-right: 1rem;
     }
 
     .navbutton {
@@ -146,24 +151,23 @@ nav a {
         margin-left: 1.5rem;
         display: flex;
         flex-direction: column;
-        justify-content: center;
     }
 
     .mob-nav {
+        display: none;
         position: relative;
         top: 2rem;
-        align-content: center;
         text-align: center;
         margin-top: 1.5rem;
-        margin-right: 1.5rem;
+        margin-right: 2.5rem;
+        margin-left: auto;
     }
 
     .mobnavbutton {
-        padding: 1rem 1rem;
+        padding: 1rem 2rem;
         border-style: solid;
         border-width: .3rem;
-        align-self: flex-end;
-        margin: 0 2rem;
+        
     }
 
     .mobnavbutton:hover {
